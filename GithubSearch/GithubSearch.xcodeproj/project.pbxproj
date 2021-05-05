@@ -24,6 +24,9 @@
 		BDD40CA226433A460088175C /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD40CA126433A460088175C /* URLRequestFactory.swift */; };
 		BDD40CA426433B760088175C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD40CA326433B760088175C /* HTTPMethod.swift */; };
 		BDD40CA7264342830088175C /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD40CA6264342830088175C /* SearchResponse.swift */; };
+		BDD40CA9264348570088175C /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD40CA8264348570088175C /* ServiceProvider.swift */; };
+		BDD40CAD264348920088175C /* ErrorRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD40CAC264348920088175C /* ErrorRepresentable.swift */; };
+		BDD40CAF2643489E0088175C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD40CAE2643489E0088175C /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		BDD40CA126433A460088175C /* URLRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
 		BDD40CA326433B760088175C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BDD40CA6264342830088175C /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		BDD40CA8264348570088175C /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		BDD40CAC264348920088175C /* ErrorRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRepresentable.swift; sourceTree = "<group>"; };
+		BDD40CAE2643489E0088175C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		BDD40C6D26431F520088175C /* GithubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BDD40CAA2643487D0088175C /* Common */,
 				BDD40C9C264335120088175C /* NetworkLayer */,
 				BDD40C8726432C620088175C /* ReduxStateMachine */,
 				BDD40C7F264327400088175C /* Modules */,
@@ -190,6 +197,7 @@
 		BDD40C9D2643351D0088175C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BDD40CA8264348570088175C /* ServiceProvider.swift */,
 				BDD40C9E2643352D0088175C /* GitHubService.swift */,
 			);
 			path = Services;
@@ -210,6 +218,23 @@
 				BDD40CA6264342830088175C /* SearchResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BDD40CAA2643487D0088175C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BDD40CAB264348830088175C /* Error */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BDD40CAB264348830088175C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				BDD40CAC264348920088175C /* ErrorRepresentable.swift */,
+				BDD40CAE2643489E0088175C /* NetworkError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD40CAD264348920088175C /* ErrorRepresentable.swift in Sources */,
 				BDD40C9A26432FEF0088175C /* RepositoriesSearchAction.swift in Sources */,
 				BDD40C82264327600088175C /* RepositorySearchView.swift in Sources */,
 				BDD40CA426433B760088175C /* HTTPMethod.swift in Sources */,
@@ -293,7 +319,9 @@
 				BDD40C6F26431F520088175C /* GithubSearchApp.swift in Sources */,
 				BDD40C8B26432CFD0088175C /* Store.swift in Sources */,
 				BDD40CA7264342830088175C /* SearchResponse.swift in Sources */,
+				BDD40CA9264348570088175C /* ServiceProvider.swift in Sources */,
 				BDD40C8926432CBD0088175C /* Reducer.swift in Sources */,
+				BDD40CAF2643489E0088175C /* NetworkError.swift in Sources */,
 				BDD40C9F2643352D0088175C /* GitHubService.swift in Sources */,
 				BDD40C84264327B20088175C /* SearchBar.swift in Sources */,
 			);
